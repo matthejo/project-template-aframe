@@ -4,7 +4,7 @@
     <title>AltspaceVR Sample Project for A-Frame</title>
     <script src="https://aframe.io/releases/0.3.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/AltspaceVR/aframe-altspace-component/v1.0.0/dist/aframe-altspace-component.min.js"></script>
-    <script>
+    <!--<script>
         AFRAME.registerComponent('cursor-listener', {
             init: function () {
                 var lastIndex = -1;
@@ -16,7 +16,7 @@
                 });
             }
         });
-    </script>
+    </script>-->
 </head>
 <body>
     <a-scene altspace='vertical-align: bottom;'>
@@ -25,7 +25,7 @@
             <!-- no assets in the template, but you can load yours here! -->
         </a-assets>
 
-        <a-box material="shader: standard; color: red; wireframe: true" position='0 1.5 0' cursor-listener></a-box>
+        <a-box material="shader: standard; color: blue; wireframe: true" position='0 1.5 0' cursor-listener></a-box>
 
         <a-entity position='0 0 1.5'>
             <a-camera>
